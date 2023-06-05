@@ -13,5 +13,17 @@ pip install requests
 ```rudy
 from mypackage.etherscan_api.etherscan_api import Ethereum
 eth = Ethereum()
-gasprice = eth.get_gas_price(). # 這個函數會返回Proposal Gasprice
+gasprice = eth.get_gas_price() # 這個函數會返回Proposal Gasprice
+```
+
+```rudy
+from mypackage.etherscan_api.etherscan_api import BSC
+bsc = BSC()
+gasprice = bsc.get_gas_price() # 這個函數會返回Proposal Gasprice
+```
+
+```rudy
+from mypackage.etherscan_api.etherscan_api import Polygon
+polygon = Polygon()
+gasprice = polygon.get_gas_price() # 這個函數會返回Proposal Gasprice
 ```
