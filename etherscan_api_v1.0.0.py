@@ -1,5 +1,7 @@
 import requests
 
+api_key = 'YOUR API KEY HERE'
+
 class Ethereum:
     def get_gas_price(self) :
         url = "https://api.etherscan.io/api"
@@ -7,7 +9,7 @@ class Ethereum:
         payload = {
             "module": "gastracker",
             "action": "gasoracle",
-            "apikey": "2G6DDXA3VB8AA86Q7EKA8NZC7T3K7C11KU"
+            "apikey": api_key
         }
 
         response = requests.get(url, params=payload)
