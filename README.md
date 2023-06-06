@@ -42,3 +42,20 @@ gasprice = polygon.get_gas_price() # 這個函數會返回Proposal Gasprice
 # Fast gas price: 223.9 Gwei
 # 211.2
 ```
+
+
+```rudy
+from mypackage.etherscan_api.etherscan_api import Optimism
+op = Optimism() OP Gas Price: 21000 wei
+op.eth_estimateGas() # 這個函數會返回Proposal Gasprice
+
+# OP eth_estimateGas: 21000 wei
+```
+
+```rudy
+from mypackage.etherscan_api.etherscan_api import Arbitrum
+arb = Arbitrum()
+arb.eth_estimateGas()
+
+# ARB eth_estimateGas: 342213 wei
+```
